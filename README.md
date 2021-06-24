@@ -29,6 +29,7 @@ Then are able to successfully create, update, and delete data in my database
 
 ## Mock-Up
 //vid goes here 
+![Here is what my generated page looks like](./)
 
 ## Contributors 
 //?

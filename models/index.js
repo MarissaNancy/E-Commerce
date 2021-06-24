@@ -17,15 +17,17 @@ Product.belongsToMany(Tag, {
     model: ProductTag,
     unique: false
   },
-  as: 'product_tags'
+  foreignKey: 'product_id',
+  as: 'tags_data'
 });
-// Tags belongToMany Products (through ProductTag)
+// Tags belongToMany Products (through ProductTag)//goes thru
 Tag.belongsToMany(Product, {
   through: {
-    model: ProductTag,
+    model: ProductTag, //
     unique: false
   },
-  as: 'tagged_products'
+  foreignKey: 'tag_id',
+  as: 'products_data' //
 });
 module.exports = {
   Product,
