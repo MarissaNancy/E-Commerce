@@ -1,6 +1,5 @@
 const router = require('express').Router();
 const { Tag, Product, ProductTag } = require('../../models');
-//check if producttag is in there 
 
 // The `/api/tags` endpoint
 
@@ -10,7 +9,7 @@ router.get('/', async (req, res) => {
   try {
     const TagData = await Tag.findAll(
       {
-      include: [{ model: Product, through: ProductTag, as: 'product_data' }],//
+       include: [{ model: Product, through: ProductTag, as: 'products_data' }],
     }
     );
     res.status(200).json(TagData);
@@ -26,7 +25,7 @@ router.get('/:id', async (req, res) => {
     const TagData = await Tag.findByPk(req.params.id, 
       {
       // be sure to include its associated Product data
-      include: [{ model: Product, through: ProductTag, as: 'product_data' }],
+      include: [{ model: Product, through: ProductTag, as: 'products_data' }],
     }
     );
     if (!TagData) {

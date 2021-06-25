@@ -4,8 +4,7 @@ const { Category, Product } = require('../../models');
 // The `/api/categories` endpoint'
 //> **Hint**: Be sure to look at the mini-project code for syntax help and use your model's column definitions to figure out what `req.body` will be for POST and PUT routes
 router.get('/', async(req, res) => {
-  // find all categories
-  // be sure to include its associated Products
+  //http://localhost:3001/api/categories
   try {
     const categoryData = await Category.findAll({
       include: [{ model: Product }],
@@ -17,7 +16,7 @@ router.get('/', async(req, res) => {
 });
 router.get('/:id', async(req, res) => {
   // find one category by its `id` value
-  // be sure to include its associated Products
+  // http://localhost:3001/api/categories/2
   try {
     const categoryData = await Category.findByPk(req.params.id, {
       include: [{ model: Product, }]
