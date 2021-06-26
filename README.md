@@ -13,7 +13,6 @@ Then entering 'node server.js' to start port listening.
 Next would be to run Postman with created routes and data will be displayed. 
 When creating, updating, or deleting data it is done sucessfully.
 
-
 ## Acceptance Criteria 
 Given a functional Express.js API
 When adding database name, MySQL username, and MySQL password to an environment variable file
@@ -28,11 +27,8 @@ When testing API POST, PUT, and DELETE routes in Insomnia Core
 Then are able to successfully create, update, and delete data in my database
 
 ## Mock-Up
-//vid goes here 
-![Here is what my generated page looks like](./)
 
-## Contributors 
-//?
+Here are the videos showing how my routes work:
+https://drive.google.com/file/d/1s1qJWmp8CfzAIy61rWpZFymBebQ8HZY2/view?usp=sharing
 
-## Credits
-//?
+https://drive.google.com/file/d/1nUbPBNPm0kPs5RGyI6IezcVeDCYUqHKv/view?usp=sharing

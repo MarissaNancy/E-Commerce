@@ -21,6 +21,7 @@ router.get('/', async (req, res) => {
 // GET single tag
 router.get('/:id', async (req, res) => {
   // find a single tag by its `id`
+  //http://localhost:3001/api/tags/3
   try {
     const TagData = await Tag.findByPk(req.params.id, 
       {
