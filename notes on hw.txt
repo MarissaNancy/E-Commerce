@@ -1,0 +1,32 @@
+REVIEW
+
+check to make sure you have everything installed and also env is up to date
+
+{
+    "id": 2,
+    "category_name": "Shs",
+    "products": [
+        {
+            "id": 5,
+            "product_name": "Shorts",
+            "price": 12.99,
+            "stock": 1,
+            "category_id": 21
+        }
+    ]
+}
+
+
+POST http://localhost:3001/api/categories
+{
+    "category_name": "chairs" 
+}
+
+
+PUT http://localhost:3001/api/categories/6
+{
+    "category_name": "bowls" 
+}
+
+DELETE http://localhost:3001/api/categories/6
+
